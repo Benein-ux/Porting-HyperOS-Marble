@@ -83,8 +83,8 @@ env:
   PORT_PARTITIONS: "system system_ext product mi_ext"
   DISABLE_AVB: "true"
   EROFS_COMP: "lz4hc,9"
-  EXT4_HEADROOM_MB: "32"       # ruang bebas tambahan tiap partisi EXT4 rw (MB). Kecil supaya semua partisi ext4 muat di super
-  EXT4_MARGIN_PCT: "104"       # ukuran awal ext4 = isi x persen ini; kurang -> retry otomatis
+  EXT4_HEADROOM_MB: "4"       # ruang bebas tambahan tiap partisi EXT4 rw (MB). Kecil supaya semua partisi ext4 muat di super
+  EXT4_MARGIN_PCT: "101"       # ukuran awal ext4 = isi x persen ini; kurang -> retry otomatis
   EXT4_RETRY_PCT: "105"        # tiap retry e2fsdroid: besarkan sekian persen
   VNDK_COMPAT: "true"          # vendor butuh VNDK APEX versi lama -> salin dari ROM base
   LINKER_CHECK: "true"         # laporan dependensi linker ELF vendor/odm (info)
